@@ -1,0 +1,46 @@
+
+# Quiz menu items definition
+entity.quiz.collection:
+  title: 'Quiz list'
+  route_name: entity.quiz.collection
+  description: 'List Quiz entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Quiz type menu items definition
+entity.quiz_type.collection:
+  title: 'Quiz type'
+  route_name: entity.quiz_type.collection
+  description: 'List Quiz type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+
+
+# Quiz question menu items definition
+entity.quiz_question.collection:
+  title: 'Quiz question list'
+  route_name: entity.quiz_question.collection
+  description: 'List Quiz question entities'
+  parent: system.admin_structure
+  weight: 100
+
+quiz_question.admin.structure.settings:
+  title: 'Quiz question settings'
+  description: 'Configure Quiz question entities'
+  route_name: quiz_question.settings
+  parent: system.admin_structure
+
+# Quiz result menu items definition
+entity.quiz_result.collection:
+  title: 'Quiz result list'
+  route_name: entity.quiz_result.collection
+  description: 'List Quiz result entities'
+  parent: system.admin_structure
+  weight: 100
+
+quiz_result.admin.structure.settings:
+  title: 'Quiz result settings'
+  description: 'Configure Quiz result entities'
+  route_name: quiz_result.settings
+  parent: system.admin_structure

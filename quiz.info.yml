@@ -1,0 +1,5 @@
+name: 'quiz'
+type: module
+description: 'Allows creation of quizes'
+core: 8.x
+package: 'Custom'

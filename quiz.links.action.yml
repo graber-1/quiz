@@ -1,0 +1,21 @@
+entity.quiz.add_form:
+  route_name: entity.quiz.add_page
+  title: 'Add Quiz'
+  appears_on:
+    - entity.quiz.collection
+entity.quiz_type.add_form:
+  route_name: entity.quiz_type.add_form
+  title: 'Add Quiz type'
+  appears_on:
+    - entity.quiz_type.collection
+
+entity.quiz_question.add_form:
+  route_name: entity.quiz_question.add_form
+  title: 'Add Quiz question'
+  appears_on:
+    - entity.quiz_question.collection
+entity.quiz_result.add_form:
+  route_name: entity.quiz_result.add_form
+  title: 'Add Quiz result'
+  appears_on:
+    - entity.quiz_result.collection

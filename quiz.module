@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains quiz.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function quiz_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the quiz module.
+    case 'help.page.quiz':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function quiz_theme() {
+  $theme = [];
+  $theme['quiz'] = [
+    'render element' => 'elements',
+    'file' => 'quiz.page.inc',
+    'template' => 'quiz',
+  ];
+  $theme['quiz_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'quiz.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function quiz_theme_suggestions_quiz(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#quiz'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'quiz__' . $sanitized_view_mode;
+  $suggestions[] = 'quiz__' . $entity->bundle();
+  $suggestions[] = 'quiz__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'quiz__' . $entity->id();
+  $suggestions[] = 'quiz__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

@@ -1,0 +1,77 @@
+# Quiz routing definition
+
+entity.quiz.canonical:
+  route_name: entity.quiz.canonical
+  base_route: entity.quiz.canonical
+  title: 'View'
+
+entity.quiz.edit_form:
+  route_name: entity.quiz.edit_form
+  base_route: entity.quiz.canonical
+  title: 'Edit'
+
+entity.quiz.version_history:
+  route_name: entity.quiz.version_history
+  base_route: entity.quiz.canonical
+  title: 'Revisions'
+
+entity.quiz.delete_form:
+  route_name:  entity.quiz.delete_form
+  base_route:  entity.quiz.canonical
+  title: Delete
+  weight: 10
+
+# Quiz question routing definition
+quiz_question.settings_tab:
+  route_name: quiz_question.settings
+  title: 'Settings'
+  base_route: quiz_question.settings
+
+entity.quiz_question.canonical:
+  route_name: entity.quiz_question.canonical
+  base_route: entity.quiz_question.canonical
+  title: 'View'
+
+entity.quiz_question.edit_form:
+  route_name: entity.quiz_question.edit_form
+  base_route: entity.quiz_question.canonical
+  title: 'Edit'
+
+entity.quiz_question.version_history:
+  route_name: entity.quiz_question.version_history
+  base_route: entity.quiz_question.canonical
+  title: 'Revisions'
+
+entity.quiz_question.delete_form:
+  route_name:  entity.quiz_question.delete_form
+  base_route:  entity.quiz_question.canonical
+  title: Delete
+  weight: 10
+
+# Quiz result routing definition
+quiz_result.settings_tab:
+  route_name: quiz_result.settings
+  title: 'Settings'
+  base_route: quiz_result.settings
+
+entity.quiz_result.canonical:
+  route_name: entity.quiz_result.canonical
+  base_route: entity.quiz_result.canonical
+  title: 'View'
+
+entity.quiz_result.edit_form:
+  route_name: entity.quiz_result.edit_form
+  base_route: entity.quiz_result.canonical
+  title: 'Edit'
+
+entity.quiz_result.version_history:
+  route_name: entity.quiz_result.version_history
+  base_route: entity.quiz_result.canonical
+  title: 'Revisions'
+
+entity.quiz_result.delete_form:
+  route_name:  entity.quiz_result.delete_form
+  base_route:  entity.quiz_result.canonical
+  title: Delete
+  weight: 10
+

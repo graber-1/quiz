@@ -1,0 +1,90 @@
+add quiz entities:
+  title: 'Create new Quiz entities'
+
+administer quiz entities:
+  title: 'Administer Quiz entities'
+  description: 'Allow to access the administration form to configure Quiz entities.'
+  restrict access: true
+
+delete quiz entities:
+  title: 'Delete Quiz entities'
+
+edit quiz entities:
+  title: 'Edit Quiz entities'
+
+view published quiz entities:
+  title: 'View published Quiz entities'
+
+view unpublished quiz entities:
+  title: 'View unpublished Quiz entities'
+
+view all quiz revisions:
+  title: 'View all Quiz revisions'
+
+revert all quiz revisions:
+  title: 'Revert all Quiz revisions'
+  description: 'Role requires permission <em>view Quiz revisions</em> and <em>edit rights</em> for quiz entities in question or <em>administer quiz entities</em>.'
+
+delete all quiz revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Quiz revisions</em> and <em>delete rights</em> for quiz entities in question or <em>administer quiz entities</em>.'
+add quiz question entities:
+  title: 'Create new Quiz question entities'
+
+administer quiz question entities:
+  title: 'Administer Quiz question entities'
+  description: 'Allow to access the administration form to configure Quiz question entities.'
+  restrict access: true
+
+delete quiz question entities:
+  title: 'Delete Quiz question entities'
+
+edit quiz question entities:
+  title: 'Edit Quiz question entities'
+
+view published quiz question entities:
+  title: 'View published Quiz question entities'
+
+view unpublished quiz question entities:
+  title: 'View unpublished Quiz question entities'
+
+view all quiz question revisions:
+  title: 'View all Quiz question revisions'
+
+revert all quiz question revisions:
+  title: 'Revert all Quiz question revisions'
+  description: 'Role requires permission <em>view Quiz question revisions</em> and <em>edit rights</em> for quiz question entities in question or <em>administer quiz question entities</em>.'
+
+delete all quiz question revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Quiz question revisions</em> and <em>delete rights</em> for quiz question entities in question or <em>administer quiz question entities</em>.'
+add quiz result entities:
+  title: 'Create new Quiz result entities'
+
+administer quiz result entities:
+  title: 'Administer Quiz result entities'
+  description: 'Allow to access the administration form to configure Quiz result entities.'
+  restrict access: true
+
+delete quiz result entities:
+  title: 'Delete Quiz result entities'
+
+edit quiz result entities:
+  title: 'Edit Quiz result entities'
+
+view published quiz result entities:
+  title: 'View published Quiz result entities'
+
+view unpublished quiz result entities:
+  title: 'View unpublished Quiz result entities'
+
+view all quiz result revisions:
+  title: 'View all Quiz result revisions'
+
+revert all quiz result revisions:
+  title: 'Revert all Quiz result revisions'
+  description: 'Role requires permission <em>view Quiz result revisions</em> and <em>edit rights</em> for quiz result entities in question or <em>administer quiz result entities</em>.'
+
+delete all quiz result revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Quiz result revisions</em> and <em>delete rights</em> for quiz result entities in question or <em>administer quiz result entities</em>.'
