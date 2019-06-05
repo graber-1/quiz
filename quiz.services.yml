@@ -1,0 +1,4 @@
+services:
+  plugin.manager.quiz_question_type:
+    class: Drupal\quiz\Service\QuestionTypeManager
+    arguments: ['@container.namespaces', '@cache.discovery', '@module_handler', '@event_dispatcher']

@@ -272,7 +272,7 @@ class QuizQuestion extends RevisionableContentEntityBase implements QuizQuestion
       ->setTranslatable(TRUE);
 
     // Quiz-specific fields.
-    $fields['type'] = BaseFieldDefinition::create('question_type')
+    $fields['type'] = BaseFieldDefinition::create('quiz_question_type')
       ->setLabel(t('Question type'))
       ->setDescription(t('The ID of the question type plugin.'))
       ->setRequired(TRUE)

@@ -11,13 +11,14 @@ use Drupal\Core\StringTranslation\TranslatableMarkup;
 use Drupal\Core\TypedData\DataDefinition;
 
 /**
- * Plugin implementation of the 'question_type' field type.
+ * Plugin implementation of the 'quiz_question_type' field type.
  *
  * @FieldType(
- *   id = "question_type",
+ *   id = "quiz_question_type",
  *   label = @Translation("Question type"),
- *   description = @Translation("Allows question type plugin selection"),
- *   default_widget = "question_type_widget" * )
+ *   description = @Translation("Allows quiz question type plugin selection"),
+ *   default_widget = "question_type_widget",
+ * )
  */
 class QuestionType extends FieldItemBase {
 
