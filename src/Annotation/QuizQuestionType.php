@@ -9,7 +9,7 @@ use Drupal\Component\Annotation\Plugin;
  *
  * Plugin Namespace: Plugin\QuizQuestionTypes.
  *
- * @see \Drupal\quiz\QuizQuestionTypes\QuizQuestionTypeInterface
+ * @see \Drupal\quiz\QuizQuestionTypes\QuestionTypeInterface
  * @see \Drupal\quiz\Service\QuestionTypeManager
  * @see \Drupal\quiz\QuizQuestionTypes\QuestionTypeBase
  * @see plugin_api

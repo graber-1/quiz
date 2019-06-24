@@ -50,7 +50,7 @@ class QuestionTypeManager extends DefaultPluginManager implements CategorizingPl
       'Plugin/QuizQuestionTypes',
       $namespaces,
       $moduleHandler,
-      'Drupal\quiz\QuizQuestionTypes\QuizQuestionTypeInterface',
+      'Drupal\quiz\QuizQuestionTypes\QuestionTypeInterface',
       'Drupal\quiz\Annotation\QuizQuestionType'
     );
     $this->alterInfo('quiz_question_types_info');

@@ -45,7 +45,7 @@ use Drupal\user\UserInterface;
  *   entity_keys = {
  *     "id" = "id",
  *     "revision" = "vid",
- *     "label" = "name",
+ *     "label" = "question",
  *     "uuid" = "uuid",
  *     "uid" = "user_id",
  *     "langcode" = "langcode",
@@ -224,12 +224,12 @@ class QuizQuestion extends RevisionableContentEntityBase implements QuizQuestion
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
-    $fields['name'] = BaseFieldDefinition::create('string')
-      ->setLabel(t('Name'))
-      ->setDescription(t('The name of the Quiz question entity.'))
+    $fields['question'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Question'))
+      ->setDescription(t('The Question and the entity label at the same time.'))
       ->setRevisionable(TRUE)
       ->setSettings([
-        'max_length' => 50,
+        'max_length' => 255,
         'text_processing' => 0,
       ])
       ->setDefaultValue('')
@@ -244,6 +244,7 @@ class QuizQuestion extends RevisionableContentEntityBase implements QuizQuestion
       ])
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE)
+      ->setTranslatable(TRUE)
       ->setRequired(TRUE);
 
     $fields['status'] = BaseFieldDefinition::create('boolean')
@@ -283,6 +284,10 @@ class QuizQuestion extends RevisionableContentEntityBase implements QuizQuestion
       ])
       ->setDisplayConfigurable('form', FALSE)
       ->setDisplayConfigurable('view', FALSE);
+
+    $fields['configuration'] = BaseFieldDefinition::create('map')
+      ->setLabel(t('Configuration'))
+      ->setDescription(t('A serialized array containing question configuration (like answer data).'));
 
     return $fields;
   }
